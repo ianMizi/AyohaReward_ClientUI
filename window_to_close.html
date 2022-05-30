@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body onload="quitBox('quit');">
+<h1>The window closer:</h1>
+<input type="button" onclick="return quitBox('quit');" value="Close This Window/Tab" /> 
+ <script type="text/javascript">
+function quitBox(cmd) 
+{      
+    if (cmd=='quit')    
+    {   
+       window.opener.postMessage('location', '*');
+       window.open(location, '_self').close();    
+    }     
+    return false;   
+}
+</script>
+</body>
+</html>

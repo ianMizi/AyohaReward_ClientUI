@@ -1,0 +1,1841 @@
+<!DOCTYPE HTML>
+
+
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+    <meta content='yes' name='mobile-web-app-capable' />
+    <title>Ayoha</title>
+   
+    <style type="text/css">
+        .x-videoExt{height:100%;width:100%;background-color:#000}.x-videoExt > *{height:100%;width:100%;position:absolute;object-fit: fill;}.x-videoExt-ghost{-webkit-background-size:100% 100%;background:transparent url() center center no-repeat}audio{width:100%}
+    </style>
+
+    <style type="text/css">
+        .swal-container {
+            z-index: 2000;
+        }
+        .swal2-container {
+  z-index: 2000;
+}
+    </style>
+    <style type="text/css">
+        body.x-masked .x-mask {
+    z-index: 20000;
+}
+    </style>
+    <style type="text/css">
+        input.largerCheckbox {
+            width: 30px;
+            height: 30px;
+        }
+
+        input.MediumCheckbox {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+ <style>
+     #ip2 {
+    border-radius: 15px;
+    border: 1px solid #609;
+    padding: 20px; 
+    width: 300px;
+    height: 15px;    
+     color: black;
+}
+      #ip3 {
+    border-radius: 15px;
+    border: 1px solid #609;
+    padding: 20px; 
+    width: 300px;
+    height: 15px;    
+     color: black;
+}
+      #barchartAyohaMerchanReview {
+  width: 250px;
+  height: 140px;
+  background-color:transparent;
+  font-family: Arial;
+}
+ </style>
+
+
+
+    <style>
+        @keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(216,145,239, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(216,145,239, 0);
+  }
+}
+
+ @keyframes shadow-pulse-ayohatabcontest
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(255,165,0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(255,165,0, 0);
+  }
+}
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(216,145,239, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(216,145,239, 0);
+  }
+}
+
+
+
+.example-1
+{
+  /*float: left;
+  margin: 40px;*/
+  width: 230px;
+  height: 230px;
+  color:#fff;
+  background: #fff;
+    background: rgba(30, 144, 255, 0.6);
+   /*box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);*/
+  /*background: no-repeat;*/
+  border-radius: 50%;
+  animation: shadow-pulse 1s infinite;
+}
+.example-1ori
+{
+  /*float: left;
+  margin: 40px;*/
+  width: 130px;
+  height: 130px; 
+  color:#fff;
+  background: rgba(30, 144, 255, 0.6);
+  border-radius: 40%;
+  animation: shadow-pulse 1s infinite;
+}
+.example-2
+{
+  /*float: left;
+  margin: 40px;*/
+  width: 200px;
+  height: 130px;
+  color: #fff;
+  background: rgba(30, 144, 255, 0.6);
+  border-radius: 10%;
+  animation: shadow-pulse 1s infinite;
+}.example-3
+{
+  /*float: left;
+  margin: 40px;*/
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  /*margin:0px 0px 0px 30px;*/
+  background: rgba(255,165,0, 0.2);
+  border-radius: 50%;
+  animation: shadow-pulse-ayohatabcontest 1s infinite;
+}
+    </style>
+
+    <!--<style>
+        .pulse {
+  /*margin:100px;*/
+  display: block;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: #cca92c;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse 1s infinite; 
+  
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+    </style>-->
+
+
+    <style>
+         .button3Deleteviewloyaltycard {
+            background-color: red;
+            /*background-image: linear-gradient(#ff00de75, #c800ffc9);*/          
+            color: white;
+            border: 2px solid white;
+            border-radius: 7px;
+            width:55%;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+        }.button3viewloyaltycard {
+            /*background-color: #fac;*/
+            background-color: #fe21af;
+            background-image: linear-gradient(#ff00de75,  #fe21af);          
+            color: white;
+            /*icon:url("/resources/icons/membershicardwhite.png");*/
+            border: 2px solid white;
+            border-radius: 7px;
+            width:100%;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonMediaSocial {
+            background-color: transparent;
+            color: transparent;
+            border: 1px none #666;
+            /*border-radius: 25px;*/
+            /*width: 100px;
+            padding: 8px;
+            font-size: 14px;*/
+            width: 16px;
+            height:16px;
+            padding: 0px;         
+           
+            /*font-size: 12px;
+            text-align: center;*/
+        }
+    </style>
+    <style>
+            #donutchart,
+            #chart {
+                width: 280px;
+                height: 280px;
+                background-color: transparent;
+                font-family: Arial;
+            }
+
+            #chartSMS {
+                width: 280px;
+                height: 280px;
+                background-color: transparent;
+                font-family: Arial;
+            }
+
+            #chartSMSSMSDashboard {
+                width: 440px;
+                height: 440px;
+                background-color: transparent;
+                font-family: Arial;
+            }
+
+            #barchartSMSDashboard_values {
+                width: 900px;
+                height: 300px;
+                background-color: transparent;
+                font-family: Arial;
+            }
+
+            #chartPushNotificationsDashboard {
+                width: 200px;
+                height: 200px;
+                background-color: transparent;
+                font-family: Arial;
+                margin:-35px 0px 0px -28px;
+            }
+              #chartSMSDashboard {
+                width: 200px;
+                 height: 200px;
+                background-color: transparent;
+                font-family: Arial;
+                  margin:-35px 0px 0px -58px;
+            }
+                #chartWhatAppDashboard {
+                width: 200px;
+                height: 200px;
+                background-color: transparent;
+                font-family: Arial;
+                 margin:-35px 0px 0px -108px;
+            }
+            #barchartPushNotificationsDashboard_values {
+                width: 900px;
+                height: 300px;
+                background-color: transparent;
+                font-family: Arial;
+            }
+
+            #chartEmail {
+                width: 280px;
+                height: 280px;
+                background-color: transparent;
+                font-family: Arial;
+            }
+
+            #chartWhatApp {
+                width: 280px;
+                height: 280px;
+                background-color: transparent;
+                font-family: Arial;
+            }
+
+            #donutchart {
+                position: relative;
+            }
+
+            /*#labelOverlay {
+            width: 90px;
+            height: 45px;
+            position: absolute;
+            top: 233px;
+            left: 205px;
+            text-align: center;
+            cursor: default;
+        }
+
+        #labelOverlay p {
+          line-height: 0.3;
+          padding:0;
+          margin: 8px;
+        }
+
+        #labelOverlay p.used-size {
+          line-height: 0.5;
+          font-size: 20pt;
+          color: #8e8e8e;
+        }*/
+
+            /*#labelOverlay p.total-size {
+          line-height: 0.5;
+          font-size: 12pt;
+          color: #cdcdcd;
+        }*/
+    </style>
+
+
+
+    <style type="text/css">
+        .marquee {
+            width: 300px;
+            margin: 0 auto;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+            .marquee span {
+                display: inline-block;
+                text-indent: 0;
+                animation: marquee 10s linear infinite;
+            }
+
+                .marquee span:hover {
+                    animation-play-state: paused;
+                }
+        /* Make it move */
+        @keyframes marquee {
+            0% {
+                transform: translate(200px, 0);
+            }
+
+            30% {
+                transform: translate(0, 0);
+            }
+
+            60% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(-100%, 0);
+            }
+        }
+    </style>
+    <style type="text/css">
+        input {
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 1px solid white;
+            color: white;
+            width: 220px;
+        }
+
+        inputrange {
+            border: 1px;
+            outline: 0;
+            /*background: red;*/
+            border-bottom: 1px solid black;
+            color: black;
+            width: 220px;
+        }
+
+        .my-panel .x-panel-inner {
+            background-color: transparent !important;
+        }
+    </style>
+ 
+    <style type="text/css">
+        .button {
+            position: relative;
+            background-color: #f44336;
+            border: none;
+            font-size: 14px;
+            color: #FFFFFF;
+            padding: 5px;
+            width: 80px;
+            text-align: center;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+
+        .buttonSave {
+            background-color: white;
+            color: red;
+            border: 1px solid #e7e7e7;
+            border-radius: 25px;
+            width: 80%;
+            padding: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            /*position: relative;*/
+            /*background-color: #f44336;
+            background-color: white;
+            border: none;
+            font-size: 18px;
+            color: #FFFFFF;
+            padding: 5px;
+            width: 80px;
+            text-align: center;
+            -webkit-transition-duration: 0.4s;  Safari
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 25px;*/
+        }   .buttonsHtmlBgDeleteNotificationListTransparent {
+            background-color: transparent;
+            color: transparent;
+            border: 1px none #666;
+            /*border-radius: 25px;*/
+            /*width: 100px;
+            padding: 8px;
+            font-size: 14px;*/
+            width: 35px;
+            height: 30px;
+            padding: 0px;
+            /*font-size: 12px;
+            text-align: center;*/
+        }
+            .buttonsHtmlBgTransparent {
+            background-color: transparent;
+            color: transparent;
+            border: 1px none #666;
+            /*border-radius: 25px;*/
+            /*width: 100px;
+            padding: 8px;
+            font-size: 14px;*/
+            width: 35px;
+            height: 30px;
+            padding: 0px;
+            /*font-size: 12px;
+            text-align: center;*/
+        }  .buttonsHtmlBgTransparentMerchantLike {
+            background-color: transparent;
+            color: black;
+            border: 1px none #666;
+            /*border-radius: 25px;*/
+            /*width: 100px;
+            padding: 8px;
+            font-size: 14px;*/
+            width: 30px;
+            height: 30px;
+            padding: 0px;
+            font-size: 12px;
+            text-align: center;
+        }
+            .buttonSave:active {
+                background-color: #f44336;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+
+        .button:after {
+            content: "";
+            background: #f1f1f1;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s;
+        }
+
+        .button:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s;
+        }
+
+        .button:active {
+            background-color: #f44336;
+            color: #FFFFFF;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .button4 {
+            background-color: white;
+            color: purple;
+            border: 1px solid purple;
+            border-radius: 7px;
+            width: 80%;
+            padding: 11.5px 0px 11.5px 0px;
+            font-size: 11px;
+            text-align: center;
+        }
+        .buttonSigToCartSign{
+              background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 1px solid #fac;
+            border-radius: 4px;           
+            /*width: 85%;*/
+            width:35px;
+            height:35px;
+              padding: 2px 0px 2px 0px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .buttonAddToCartSign{
+              background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 1px solid #fac;
+            border-radius: 4px;           
+            /*width: 85%;*/
+            width:25px;
+            height:25px;
+              padding: 2px 0px 2px 0px;
+            font-size: 12px;
+            text-align: center;
+        }.buttonBuyNow {
+            /*background-color: white;
+            color: purple;
+            border: 1px solid purple;*/
+             /*background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);*/  
+                background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);                
+            color: white;
+            border: 2px solid #fac;
+            border-radius: 7px;           
+            /*width: 85%;*/
+            width:120px;
+              padding: 5px 0px 5px 0px;
+            font-size: 13px;
+            text-align: center;
+        }
+         .buttonAddToCartLarge {
+            /*background-color: white;
+            color: purple;
+            border: 1px solid purple;*/
+             background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px solid #fac;
+            border-radius: 7px;           
+            /*width: 85%;*/
+            width:160px;
+              padding: 8px 0px 8px 0px;
+            font-size: 12px;
+            text-align: center;
+        }
+       .buttonAddToCart {
+            /*background-color: white;
+            color: purple;
+            border: 1px solid purple;*/
+             background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px solid #fac;
+            border-radius: 7px;           
+            /*width: 85%;*/
+            width:100px;
+              padding: 5px 0px 5px 0px;
+            font-size: 12px;
+            text-align: center;
+        } .buttonChatWithUs {
+            /*background-color: white;
+            color: purple;
+            border: 1px solid purple;*/
+             background-color: green;
+            /*background-image: linear-gradient(#ff00de75, #c800ffc9);*/          
+            color: white;
+            border: 2px none #fac;
+            border-radius: 7px;           
+            /*width: 85%;*/
+            width:100px;
+              padding: 5px 0px 5px 0px;
+            font-size: 12px;
+            text-align: center;
+        }
+       .buttonAddToCartMain {
+            /*background-color: white;
+            color: purple;
+            border: 1px solid purple;*/
+             background-color:white;
+            /*background-image: linear-gradient(#ff00de75, #c800ffc9);*/          
+            /*color: white;
+            border: 2px none #fac;*/
+             border: 2px none #fac;
+            border-radius: 7px;           
+            /*width: 85%;*/
+            width:40px;
+            height:35px;
+              padding: 0px 0px 5px 0px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .buttonMerchantBusinessTypeLink {
+            background-color: white;
+            color: purple;
+            border: 1px solid purple;
+            border-radius: 7px;           
+            /*width: 85%;*/
+            width:140px;
+            padding: 11.5px 1px 11.5px 1px;
+            font-size: 11px;
+            text-align: center;
+        }.buttonMerchantBusinessTypeLinkIsMember {
+            background-color: white;
+            color: purple;
+            border: 1px none purple;
+            border-radius: 10px;           
+            width: 85%;
+            /*width:200px;*/
+            padding: 11.5px 1px 11.5px 1px;
+            font-size: 14px;
+            font-weight:bold;
+            text-align: center;
+        }.buttonMerchantBusinessTypeLinkNoBusiness {
+            background-color: #F8F8F8;
+            color: #D3D3D3;
+            border: 1px solid 	#D0D0D0;
+            border-radius: 7px;
+            /*width: 85%;*/
+             width:140px;
+            padding: 11.5px 1px 11.5px 1px;
+            font-size: 11px;
+            text-align: center;
+        }
+          .buttonViewMyRanking {
+            background-color: white;
+            color: GrayText;
+            border: 2px solid purple;
+            border-radius: 15px;
+            width: 190px;
+            padding: 6px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .buttonStatusLog {
+            background-color: white;
+            color: purple;
+            border: 1px solid purple;
+            margin-top:10px;
+            border-radius: 7px;
+            width: 130px;
+            padding: 3px;
+            font-size: 10px;
+            text-align: center;
+        }
+          .buttonAyohaRedemptionHistoryStatus {
+            background-color: white;
+            color: purple;
+            border: 1px solid purple;
+            margin-top:10px;
+            border-radius: 7px;
+            width: 130px;
+            padding: 4px;
+            font-size: 10px;
+            text-align: center;
+        }
+          .buttonAyohaRedemptionHistoryCancel {
+            background-color: white;
+            color: purple;
+            border: 1px solid purple;
+            margin-top:10px;
+            border-radius: 7px;
+            width: 72px;
+            padding: 4px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .buttonViewMyRanking01 {
+            background-color: white;
+            color: purple;
+            border: 1px solid purple;
+            margin-top:10px;
+            border-radius: 7px;
+            width: 130px;
+            padding: 9px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .button3 {
+            background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px solid #fac;
+            border-radius: 7px;
+            width: 90%;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+        }.buttonGetMemberhipCard {
+            background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px solid #fac;
+            border-radius: 7px;
+            /*width: 90%;*/
+             width: 160px;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+        }.buttonCheckOutAyohaShoppingCart {
+            background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px none #fac;
+            border-radius: 20px;
+            width: 50%;
+            padding: 5px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonRedeemDashboard {
+            background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px none #fac;
+            border-radius: 20px;
+            width: 45%;
+            padding: 12px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonAyohaPointRedemption_Redeem_Yes {
+            background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px none #fac;
+            border-radius: 20px;
+            width: 80%;
+            padding: 12px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonAyohaPointRedemption_Redeem_No {
+            background-color: white;
+            /*background-image: linear-gradient(#ff00de75, #c800ffc9);*/          
+            color: purple;
+            border: 2px solid #fac;
+            border-radius: 20px;
+            width: 80%;
+            padding: 12px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonLogin {
+            background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px none #fac;
+            border-radius: 25px;
+            width: 80%;
+            padding: 16px;
+            font-size: 16px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonBackTransfer {
+           background-color: transparent;                  
+            color: white;
+            border: 1px none #fac;
+            border-radius: 25px;
+            width: 100px;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:bolder;
+        }.buttonSearchTransferEwallet {
+           background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 1px solid #fac;
+            border-radius: 10px;
+            width: auto;
+            padding: 10px 40px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:normal;
+        }.buttonVisitAyohaMerchant {
+           background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 1px solid #fac;
+            border-radius: 25px;
+            width: 150px;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:normal;
+        }.buttonRecentlyUsedAddress {
+           background-color: transparent;        
+            color: blue;
+            border: 1px none purple;
+            border-radius: 25px;
+            width: 180px;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonCreateAyohaEwalletAccount {
+           background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 1px solid #fac;
+            border-radius: 5px;
+            width: 100%;
+            padding: 12px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonCheckOut {
+           background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 1px solid #fac;
+            border-radius: 5px;
+            width: 271px;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonPayNow {
+           background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 1px none purple;
+            border-radius: 25px;
+            width: 140px;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonSelectAnotherCard {
+           background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 1px none purple;
+            border-radius: 25px;
+            width: 55%;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonRegisterNow {
+            background-color: transparent;
+            /*background-image: linear-gradient(#ff00de75, #c800ffc9);*/          
+            color: purple;
+            border: 1px none purple;
+            border-radius: 25px;
+            width: 80%;
+            padding: 14px;
+            font-size: 16px;
+            text-align: center;
+            font-weight:bold;
+        }.buttonForgotPassword {
+            background-color: transparent;
+            /*background-image: linear-gradient(#ff00de75, #c800ffc9);*/          
+            color: grey;
+            border: 1px none purple;
+            border-radius: 25px;
+            width: 100%;
+            padding: 2px;
+            font-size: 14px;
+            text-align: center;
+            font-weight:normal;
+            font-family:Century Gothic;
+        }
+         .buttonForgotPasswordeWallet {
+            background-color: transparent;
+            /*background-image: linear-gradient(#ff00de75, #c800ffc9);*/          
+            color: white;
+            border: 1px none purple;
+            border-radius: 25px;
+            width: 100%;
+            padding: 2px;
+            font-size: 14px;
+            text-align: center;
+            font-weight:normal;
+            font-family:Century Gothic;
+        }
+         
+         .buttonAdvertisementCalendar {
+            background-color: white;
+            color: rebeccapurple;
+            border: 2px solid rebeccapurple;
+            border-radius: 25px;
+          width: 180px;
+              padding: 4px;
+            font-size: 12px;
+            text-align: center;
+        }
+         .buttonStampCampaignModelButton {
+            background-color: transparent;
+            color: rebeccapurple;
+            border: 2px none rebeccapurple;
+            border-radius: 25px;
+            width: 100px;
+            padding: 2px;
+            font-size: 14px;
+            font-weight:bold;            
+            text-align: right;
+            margin:-5px 0px 0px 0px;
+        }
+          .buttonStampCampaignCreate {
+            background-color: white;
+            color: rebeccapurple;
+            border: 2px solid rebeccapurple;
+            border-radius: 25px;
+          width: 80%;
+              padding: 8px;
+            font-size: 12px;
+            text-align: center;
+        }.buttonSignUp {
+            /*background-color: white;
+            color: rebeccapurple;
+            border: 2px solid rebeccapurple;         
+            border-radius: 25px;
+             width: 90%;
+              padding: 14px;
+            font-size: 14px;
+            text-align: center;*/
+             background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px solid #fac;
+            border-radius: 25px;
+            width: 90%;
+            padding: 14px;
+            font-size: 14px;
+            text-align: center;
+        }.buttonConfirmMembershipCard {
+            background-color: white;
+            color: rebeccapurple;
+            border: 2px solid rebeccapurple;
+            border-radius: 20px;
+            width: 200px;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+        }.buttonDeleteReview {
+            background-color: transparent;
+            color: rebeccapurple;
+            border: 2px solid rebeccapurple;
+            border-radius: 20px;
+            width: 150px;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+        }.buttonPostReview {
+             background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px solid #fac;
+            border-radius: 20px;
+            width: 150px;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+        }.buttonSendEmail {
+             background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px solid #fac;
+            border-radius: 25px;
+            width: 75%;
+            padding: 13px;
+            font-size: 14px;
+            text-align: center;
+        }.buttonRedeem {
+            background-color: red;
+            color: white;
+            border: 2px solid red;
+            border-radius: 10px;
+          width: 100px;
+              padding: 4px;
+            font-size: 12px;
+            text-align: center;
+        }
+            .buttonStampCampaignDelete {
+            background-color: red;
+            color: white;
+            border: 2px solid rebeccapurple;
+            border-radius: 25px;
+          width: 80%;
+              padding: 8px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .buttonSaves {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+        }.buttonNoWhite {
+            /*background-color: white;
+            color: purple;
+            border: 1px solid purple;*/
+             background-color: white;        
+            color: black;
+            border: 2px solid #d3d3d3;
+            border-radius: 20px;           
+            /*width: 85%;*/
+            width:115px;
+              padding: 8px 0px 8px 0px;
+            font-size: 16px;
+            font-weight:bold;
+            text-align: center;
+        }.buttonYesPurple {
+            /*background-color: white;
+            color: purple;
+            border: 1px solid purple;*/
+             background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px none white;
+            border-radius: 20px;           
+            /*width: 85%;*/
+            width:115px;
+              padding: 10px 0px 10px 0px;
+            font-size: 16px;
+            font-weight:bold;
+            color:black;
+            text-align: center;
+        }.buttonConfirmTransferMoneyPurple {
+            /*background-color: white;
+            color: purple;
+            border: 1px solid purple;*/
+             background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);          
+            color: white;
+            border: 2px none white;
+            border-radius: 20px;           
+            /*width: 85%;*/
+            width:165px;
+              padding: 10px 0px 10px 0px;
+            font-size: 16px;
+            font-weight:bold;          
+            text-align: center;
+        }.buttonCancelTransferMoneyPurple {
+            background-color: white;        
+            color: black;
+            border: 2px solid #d3d3d3;
+            border-radius: 20px;           
+            /*width: 85%;*/
+            width:165px;
+              padding: 8px 0px 8px 0px;
+            font-size: 16px;
+            font-weight:bold;
+            text-align: center;
+        }
+    </style>
+    <style type="text/css">
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        } .blink_star {
+            animation: blinker 3s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <style type="text/css">
+         .ballon_me {
+            animation: balloons 3s linear infinite;
+        }
+        @keyframes balloons {
+  0%,100%{ transform:translateY(0) rotate(-4deg); }
+  50%{ transform:translateY(-25px) rotate(4deg); }
+}
+
+    </style>
+    <style type="text/css">
+        .blink_me_sendNow {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+    </style>
+
+    <style type ="text/css">
+           @keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.cardcontainer_img {
+	animation: zoominoutsinglefeatured 4s infinite ;
+}
+    </style>
+
+    <style type="text/css">
+        .buttonLoyaltyCardPointRedeem {
+            background-color: red;
+            color: white;
+            border: 1px solid red;
+            border-radius: 25px;
+            width: 60px;
+            padding: 3px;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .buttonLoyaltyCardPointRedeemList {
+           background-color: #fac;
+            background-image: linear-gradient(#ff00de75, #c800ffc9);   
+            color: white;
+           border: 2px solid #fac;
+            border-radius: 25px;
+            width: 170px;
+            padding: 7px;
+            font-size: 13px;
+            text-align: center;
+            margin: 0px 10px 15px 0px;
+        }
+          .buttonLoyaltyCardPointRedeemListExpired {
+           background-color: white;
+            color: red;
+           border: 2px solid red;
+            border-radius: 25px;
+            width: 170px;
+            padding: 7px;
+            font-size: 13px;
+            text-align: center;
+            margin: 0px 10px 15px 0px;
+        }
+    </style>
+    <style type="text/css">
+        div.transboxLoyaltyCardPointContainer {
+            /*width:121px;
+              height:41px;*/
+            width: 100%;
+            margin: -6px 0px 0px 0px;
+            height: 100px;
+            /*background-color: #D25959;*/
+            background-color: white;
+            /*border: 1px solid white;*/
+            border: 3px solid #ECF0F1;
+            /*box-shadow: 5px 10px 18px #888888;*/
+            /*opacity: 0.7;*/
+            text-align: center;
+            border-radius: 60px 60px 60px 60px;
+            /*filter: alpha(opacity=50);*/ /* For IE8 and earlier */
+        }
+    </style>
+    <style type="text/css">
+        .btn--shockwave.is-active {
+            -webkit-animation: shockwaveJump 1s ease-out infinite;
+            animation: shockwaveJump 1s ease-out infinite;
+        }
+
+            .btn--shockwave.is-active:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                border-radius: 50%;
+                -webkit-animation: shockwave 1s .65s ease-out infinite;
+                animation: shockwave 1s .65s ease-out infinite;
+            }
+
+            .btn--shockwave.is-active:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                border-radius: 50%;
+                -webkit-animation: shockwave 1s .5s ease-out infinite;
+                animation: shockwave 1s .5s ease-out infinite;
+            }
+
+        @-webkit-keyframes shockwaveJump {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            40% {
+                -webkit-transform: scale(1.08);
+                transform: scale(1.08);
+            }
+
+            50% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+            }
+
+            55% {
+                -webkit-transform: scale(1.02);
+                transform: scale(1.02);
+            }
+
+            60% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @keyframes shockwaveJump {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            40% {
+                -webkit-transform: scale(1.08);
+                transform: scale(1.08);
+            }
+
+            50% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+            }
+
+            55% {
+                -webkit-transform: scale(1.02);
+                transform: scale(1.02);
+            }
+
+            60% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes shockwave {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15);
+            }
+
+            95% {
+                box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;
+            }
+
+            100% {
+                -webkit-transform: scale(2.25);
+                transform: scale(2.25);
+            }
+        }
+
+        @keyframes shockwave {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15);
+            }
+
+            95% {
+                box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;
+            }
+
+            100% {
+                -webkit-transform: scale(2.25);
+                transform: scale(2.25);
+            }
+        }
+
+        .btn--jump.is-active {
+            -webkit-animation: .4s jump ease infinite alternate;
+            animation: .4s jump ease infinite alternate;
+        }
+
+        @-webkit-keyframes jump {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+            }
+
+            100% {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        @keyframes jump {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+            }
+
+            100% {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+    <style type="text/css">
+        /**
+            * Example of an initial loading indicator.
+            * It is recommended to keep this as minimal as possible to provide instant feedback
+            * while other resources are still being loaded for the first time
+            */
+        html, body {
+            height: 100%;
+            background-color: #C72CB4;
+            overflow: hidden;
+            /*background-color: #2196f3;*/
+        }
+
+        /*#appLoadingIndicator {
+                   position: absolute;
+                   top: 50%;
+                   margin-top: -15px;
+                   text-align: center;
+                   width: 100%;
+                   height: 30px;
+                   -webkit-animation-name: appLoadingIndicator;
+                   -webkit-animation-duration: 0.5s;
+                   -webkit-animation-iteration-count: infinite;
+                   -webkit-animation-direction: linear;
+               }
+
+                   #appLoadingIndicator > * {
+                       background-color: #FFFFFF;
+                       display: inline-block;
+                       height: 30px;
+                       -webkit-border-radius: 15px;
+                       margin: 0 5px;
+                       width: 30px;
+                       opacity: 0.8;
+                   }
+
+               @-webkit-keyframes appLoadingIndicator {
+                   0% {
+                       opacity: 0.8;
+                   }
+
+                   50% {
+                       opacity: 0;
+                   }
+
+                   100% {
+                       opacity: 0.8;
+                   }
+               }*/
+
+        .peeek-loading {
+            background-color: #C72CB4;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+            .peeek-loading ul {
+                position: absolute;
+                left: calc(50% - 0.7em);
+                top: calc(50% - 4.2em);
+                display: inline-block;
+                text-indent: 2.8em;
+            }
+
+                .peeek-loading ul li:after,
+                .peeek-loading ul:after {
+                    width: 1.4em;
+                    height: 1.4em;
+                    background-color: #fff;
+                    border-radius: 100%;
+                }
+
+                .peeek-loading ul li:after,
+                .peeek-loading ul:after {
+                    content: "";
+                    display: block;
+                }
+
+                .peeek-loading ul:after {
+                    position: absolute;
+                    top: 2.8em;
+                }
+
+            .peeek-loading li {
+                position: absolute;
+                padding-bottom: 5.6em;
+                top: 0;
+                left: 0;
+            }
+
+                .peeek-loading li:nth-child(1) {
+                    transform: rotate(0deg);
+                    animation-delay: 0.125s;
+                }
+
+                    .peeek-loading li:nth-child(1):after {
+                        animation-delay: 0.125s;
+                    }
+
+                .peeek-loading li:nth-child(2) {
+                    transform: rotate(36deg);
+                    animation-delay: 0.25s;
+                }
+
+                    .peeek-loading li:nth-child(2):after {
+                        animation-delay: 0.25s;
+                    }
+
+                .peeek-loading li:nth-child(3) {
+                    transform: rotate(72deg);
+                    animation-delay: 0.375s;
+                }
+
+                    .peeek-loading li:nth-child(3):after {
+                        animation-delay: 0.375s;
+                    }
+
+                .peeek-loading li:nth-child(4) {
+                    transform: rotate(108deg);
+                    animation-delay: 0.5s;
+                }
+
+                    .peeek-loading li:nth-child(4):after {
+                        animation-delay: 0.5s;
+                    }
+
+                .peeek-loading li:nth-child(5) {
+                    transform: rotate(144deg);
+                    animation-delay: 0.625s;
+                }
+
+                    .peeek-loading li:nth-child(5):after {
+                        animation-delay: 0.625s;
+                    }
+
+                .peeek-loading li:nth-child(6) {
+                    transform: rotate(180deg);
+                    animation-delay: 0.75s;
+                }
+
+                    .peeek-loading li:nth-child(6):after {
+                        animation-delay: 0.75s;
+                    }
+
+                .peeek-loading li:nth-child(7) {
+                    transform: rotate(216deg);
+                    animation-delay: 0.875s;
+                }
+
+                    .peeek-loading li:nth-child(7):after {
+                        animation-delay: 0.875s;
+                    }
+
+                .peeek-loading li:nth-child(8) {
+                    transform: rotate(252deg);
+                    animation-delay: 1s;
+                }
+
+                    .peeek-loading li:nth-child(8):after {
+                        animation-delay: 1s;
+                    }
+
+                .peeek-loading li:nth-child(9) {
+                    transform: rotate(288deg);
+                    animation-delay: 1.125s;
+                }
+
+                    .peeek-loading li:nth-child(9):after {
+                        animation-delay: 1.125s;
+                    }
+
+                .peeek-loading li:nth-child(10) {
+                    transform: rotate(324deg);
+                    animation-delay: 1.25s;
+                }
+
+                    .peeek-loading li:nth-child(10):after {
+                        animation-delay: 1.25s;
+                    }
+
+            .peeek-loading li {
+                animation: dotAnimation 2.5s infinite;
+            }
+
+        @keyframes dotAnimation {
+            0%, 55%, 100% {
+                padding: 0 0 5.6em 0;
+            }
+
+            5%, 50% {
+                padding: 2.8em 0;
+            }
+        }
+
+        .peeek-loading li:after {
+            animation: dotAnimationTwo 2.5s infinite;
+        }
+
+        @-webkit-keyframes dotAnimationTwo {
+            0%, 55%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            5%, 50% {
+                opacity: 0.5;
+                transform: scale(0.5);
+            }
+        }
+    </style>
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+  
+
+
+
+
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>-->
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>-->
+
+
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script type="text/javascript">(function(d){function l(b,d){var a=document.createElement("meta");a.setAttribute("name",b);a.setAttribute("content",d);p.appendChild(a)}var p=d.document.head||d.document.getElementsByTagName("head")[0],b=d.Ext;"undefined"==typeof b&&(d.Ext=b={});b.blink=function(d){var m=d.js||[];d=d.css||[];var a,h,c,g,n,j;navigator.userAgent.match(/IEMobile\/10\.0/)&&(a=document.createElement("style"),a.appendChild(document.createTextNode("@media screen and (orientation: portrait) {@-ms-viewport {width: 320px !important;}}@media screen and (orientation: landscape) {@-ms-viewport {width: 560px !important;}}")),
+document.getElementsByTagName("head")[0].appendChild(a));l("viewport","width\x3ddevice-width, initial-scale\x3d1.0, maximum-scale\x3d1.0, minimum-scale\x3d1.0, user-scalable\x3dno");l("apple-mobile-web-app-capable","yes");l("apple-touch-fullscreen","yes");b.microloaded=!0;var k=window.Ext.filterPlatform=function(a){function c(a){var b=/Mobile(\/|\s)/.test(a);return/(iPhone|iPod)/.test(a)||!/(Silk)/.test(a)&&/(Android)/.test(a)&&(/(Android 2)/.test(a)||b)||/(BlackBerry|BB)/.test(a)&&b||/(Windows Phone)/.test(a)}
+function d(a){return!c(a)&&(/iPad/.test(a)||/Android|Silk/.test(a)||/(RIM Tablet OS)/.test(a)||/MSIE 10/.test(a)&&/; Touch/.test(a))}var f=!1,e=navigator.userAgent,b,g;a=[].concat(a);b=window.location.search.substr(1).split("\x26");g={};var h;for(h=0;h<b.length;h++){var j=b[h].split("\x3d");g[j[0]]=j[1]}if(b=g.platform)return-1!=a.indexOf(b);b=0;for(g=a.length;b<g;b++){switch(a[b]){case "phone":f=c(e);break;case "tablet":f=d(e);break;case "desktop":f=!c(e)&&!d(e);break;case "ios":f=/(iPad|iPhone|iPod)/.test(e);
+break;case "android":f=/(Android|Silk)/.test(e);break;case "blackberry":f=/(BlackBerry|BB)/.test(e);break;case "safari":f=/Safari/.test(e)&&!/(BlackBerry|BB)/.test(e);break;case "chrome":f=/Chrome/.test(e);break;case "ie10":f=/MSIE 10/.test(e);break;case "windows":f=/MSIE 10/.test(e)||/Trident/.test(e);break;case "tizen":f=/Tizen/.test(e);break;case "firefox":f=/Firefox/.test(e)}if(f)return!0}return!1};a=0;for(h=d.length;a<h;a++){c=d[a];"string"!=typeof c&&(g=c.platform,j=c.exclude,n=c.theme,c=c.path);
+if(g){if(!k(g)||k(j))continue;b.theme||(b.theme={});b.theme.name||(b.theme.name=n||"Default")}document.write('\x3clink rel\x3d"stylesheet" href\x3d"'+c+'"\x3e')}a=0;for(h=m.length;a<h;a++)c=m[a],"string"!=typeof c&&(g=c.platform,j=c.exclude,c=c.path),(!g||k(g)&&!k(j))&&document.write('\x3cscript src\x3d"'+c+'"\x3e\x3c/script\x3e')}})(this);Ext.blink({id:"9ca4ddaf-5249-49d8-a88a-a2ccbd36a65c",js:[{path:"cordova.js",remote:!0},{path:"app.js",update:"delta"}],css:[{path:"resources/css/app.css",update:"delta"}]});</script>
+    <!--<script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>-->
+    <!--<script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />-->
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+
+
+    <!-- Roboto Font - Optional -->
+
+    <!-- FontAwesome - Required for 'bootstrap4' theme -->
+
+    <!-- Bootstrap CSS - Required for bootstrap4 theme + Modal -->
+    <!--<link href='./libs/demo.css' rel='stylesheet' />-->
+    <!--<link href='./libs/swiper/dist/css/swiper.min.css' rel='stylesheet' />
+    <link href='./libs/fullcalendar/fullcalendar.min.css' rel='stylesheet' />-->
+
+
+
+    <!--<script src='./libs/fullcalendar/lib/jquery.min.js'></script>
+    <script src='./libs/fullcalendar/lib/moment.min.js'></script>
+    <script src='./libs/fullcalendar/fullcalendar.min.js'></script>
+    <script src='./libs/swiper/dist/js/swiper.min.js'></script>-->
+
+    <!-- Bootstrap JS - Required for Modal -->
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src='./dist/swipeCalendar.min.js'></script>-->
+
+
+    <!--<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>-->
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+    <script src='https://www.google.com/jsapi'></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+
+
+    <script type="text/javascript">
+        window.scrollTo(0, 1);
+    </script>
+
+
+
+    <script type="text/javascript">
+   
+function open_a_window() 
+{
+    var w = 200;
+    var h = 200;
+    var left = Number((screen.width/2)-(w/2));
+    var tops = Number((screen.height/2)-(h/2));
+    window.open("window_to_close.html", '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+tops+', left='+left);
+    return false;
+}
+    // opener:
+    window.onmessage = function (e) {
+        if (e.data === 'location') {
+            window.location.replace('https://www.google.com/');
+        }
+    };
+   
+    </script>
+
+   
+
+
+   
+
+
+    <script type="text/javascript">
+     
+   window.history.forward();
+    function noBack() {
+      
+      
+        window.onbeforeunload = function () { return; };
+        window.location.hash = "";
+        window.location.hash = "Again-No-back-button";//again because google chrome don't insert first hash into history
+        window.onhashchange = function () { window.location.hash = ""; }
+      
+        
+    }
+   
+
+   
+   
+    </script>
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            if (window.history && window.history.pushState) {
+                window.history.pushState('', null, './');
+                $(window).on('popstate', function () {
+                    //alert('Back button was pressed.');
+                    FloatPanel_ExitDialogBoxShow();
+                  //  e.preventDefault();
+                   
+                   // e.PreventDefault();
+                    //   document.location.href = '#';
+                    // window.onbeforeunload = function () { return "YOUR WORK WILL BE LOST.MAKE SURE SAVE"; };
+                    //window.history.forward();
+                    //window.location.hash = "";
+                    //window.location.hash = "Again-No-back-button";//again because google chrome don't insert first hash into history
+                    //window.onhashchange = function () { window.location.hash = ""; }
+
+                });
+            } 
+        });
+    </script>
+
+    <!--<script>
+    var myEvent = window.attachEvent || window.addEventListener;
+    var chkevent = window.attachEvent ? 'onbeforeunload' : 'beforeunload';
+
+    myEvent(chkevent, function (e) { // For >=IE7, Chrome, Firefox
+        var confirmationMessage = '';
+        (e || window.event).returnValue = confirmationMessage;
+        return confirmationMessage;
+      
+    });
+    </script>-->
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+</head>
+<body onload="noBack()">
+   
+   
+    <!--<div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>-->
+    <!--<div style="display:none" id="qrcodeCanvass"><canvas id="qrcodeCanvas" width=300 height=300></canvas></div>-->
+    <!--<div style="display:none" id="qrcodeCanvasDest"><div id="qrcodeCanvas"></div><canvas width='300' height='300'></canvas></div>-->
+    <!--<div id="qrcode" style="width:100px; height:100px; margin-top:15px;display:none"></div>-->
+    <div id="appLoadingIndicator" class='peeek-loading'>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+
+    <!-- Calendar Event Modal -->
+    <!--<div id="calendar-event-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        <span class="title-dot-color"></span>
+                        <span class="title"></span>
+                        <span class="id"></span>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="date"></div>
+                    <div class="time"></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="DeleteEvent()">Delete</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <div id="mockspacer" style="width:100%;text-align:right">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">View</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+</body>
+</html>

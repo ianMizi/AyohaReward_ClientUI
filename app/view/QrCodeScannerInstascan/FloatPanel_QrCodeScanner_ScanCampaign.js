@@ -1,0 +1,496 @@
+﻿Ext.define('ianMizi.view.QrCodeScannerInstascan.FloatPanel_QrCodeScanner_ScanCampaign', {
+  
+});
+
+
+
+
+
+
+var scanner;
+var _FloatPanel_QrCodeScanner_ScanCampaign;
+
+function FloatPanel_QrCodeScanner_ScanCampaign() {
+
+    _FloatPanel_QrCodeScanner_ScanCampaign = Ext.create('Ext.Container',
+       
+
+        {
+           
+            id: 'FloatPanel_QrCodeScanner_ScanCampaignID',
+            // xtype: 'panel',
+            //zIndex: 400,
+            xtype: 'container',
+            //height: 475,
+            height: '100%',
+            //  height: '60%',
+            width: '100%',
+            draggable: false,
+
+            styleHtmlContent: true,
+
+            centered: true,
+            //bottom: 64,
+            // zIndex: 100,
+            modal: false,
+            // hideOnMaskTap: true,
+            //left: 10,
+            //top:10,
+            layout: {
+                type: 'fit'
+            },
+            showAnimation: {
+                type: 'popIn',
+                duration: 150,
+                easing: 'ease-out'
+                //type: 'slideIn',
+                //direction:'down',
+                //duration: 1000,
+                //easing: 'ease-in'
+            },
+            hideAnimation: {
+                type: 'popOut',
+                duration: 250,
+                easing: 'ease-out'
+                //type: 'slideOut',
+                //direction: 'down',
+                //duration: 3000,
+                //easing: 'ease-in'
+            },
+           
+           //  style: ' background-color:transparent;',
+             style: 'background-color:rgba(0, 0, 0, 0.0);border-radius: 0px 0px 0px 0px;',
+
+
+
+
+
+
+
+
+             items: [
+                 {
+
+                     xtype: 'container',
+                     width: '100%',
+                     docked: 'top',
+                     height: 40,
+                     // width: 40,
+
+                     //  title: '<font size="3" color="white">Live Tracking Map</font>',
+                     //hidden: true,
+
+                     id: 'containerFloatPanel_QrCodeScanner_ScanCampaignHeader',
+                     //style: 'background-color:rgba(0, 0, 0, 0.1);border-radius: 0px 0px 0px 0px;',
+                     style: 'background-color:rgba(0, 0, 0, 0.5);border-radius: 0px 0px 0px 0px;',
+                   //  style: ' background-color: #fac;background-image: linear-gradient(#ff00de75, #c800ffc9);',
+                     layout: {
+                         type: 'hbox',
+                         pack: 'center',
+                         align: 'center',
+                     },
+
+
+
+
+                     // hidden:true,
+                     items:
+                            [
+
+
+                                          {
+                                              xtype: 'button',
+                                              id: 'btnFloatPanel_QrCodeScanner_ScanCampaignBack',
+                                              height: 30,
+                                              width: 35,
+                                              margin: '0 0 0 10',
+                                              // iconCls: 'list',
+                                              html: '<div ><img src="resources/icons/backwhite03.png" width="25" height="20" alt="Company Name"></div>',
+                                              ui: 'plain',
+                                              handler: function () {
+                                                  Ext.getCmp('mainView').setHidden(false);
+                                                  FloatPanel_QrCodeScanner_CenterLineMessageHide();
+
+                                                  _FloatPanel_QrCodeScanner_ScanCampaign.hide(Ext.fx.Animation({
+                                                      type: 'slideOut',
+                                                      direction: 'left',
+                                                      easing: 'cubic-bezier(.7,0,.7,1)',
+                                                      duration: 250
+
+                                                  }));
+                                                 // FloatPanel_AyohaeWallet_IconShow();
+                                                  is_FloatPanel_QrCodeScanner_ScanCampaignOpen = 'N';
+                                                  RemovePages("FloatPanel_QrCodeScanner_ScanCampaignHide()");
+                                                  window.QRScanner.destroy(function (status) {
+                                                     
+                                                  });
+                                                 
+                                              }
+                                          },
+
+                                           {
+                                               xtype: 'spacer',
+
+
+                                           },
+
+                                               {
+                                                   margin: '0 15 0 0',
+                                                   id: 'htmlFloatPanel_QrCodeScanner_ScanCampaign_TitleHeaderTxt',
+                                                   html: '<font size=2 color=white><b>Scan Ayoha QR Code</b></font>'
+                                               },
+
+
+                                                         {
+                                                             xtype: 'button',
+                                                             id: 'btnFloatPanel_QrCodeScanner_ScanCampaign_CardIcon',
+                                                             height: 30,
+                                                             width: 35,
+                                                             hidden:true,
+                                                             // iconCls: 'list',
+                                                             html: '<div ><img src="resources/icons/scanQRcodeGrey.png" width="25" height="20" alt="Company Name"></div>',
+                                                             ui: 'plain',
+                                                             handler: function () {
+                                                                 Ext.getCmp('mainView').setHidden(false);
+                                                                 FloatPanel_QrCodeScanner_CenterLineMessageHide();
+                                                                 is_FloatPanel_QrCodeScanner_ScanCampaignOpen = 'N';
+                                                                // FloatPanel_AyohaeWallet_IconShow();
+                                                                 _FloatPanel_QrCodeScanner_ScanCampaign.hide(Ext.fx.Animation({
+                                                                     type: 'slideOut',
+                                                                     direction: 'right',
+                                                                     easing: 'cubic-bezier(.7,0,.7,1)',
+                                                                     duration: 250
+
+                                                                 }));
+                                                                 RemovePages("FloatPanel_QrCodeScanner_ScanCampaignHide()");
+                                                                 window.QRScanner.destroy(function (status) {
+                                                                    
+                                                                 });
+                                                                
+                                                                 //  RemovePages(_FloatPanel_AyohaNotification, "isFloatPanel_AyohaNotificationOpen");
+                                                                 //FloatPanel_AyohaNotification_AddCardHide();
+                                                             }
+                                                         },
+
+
+
+
+
+
+
+
+                 //                          {
+                 //                              xtype: 'container',
+                 //                              //  width: '100%',
+                 //                              style: 'background-color:rgba(0, 0, 0, 0.1);border-radius: 0px 0px 0px 0px;',
+                 //                              layout: {
+                 //                                  type: 'vbox',
+                 //                                  pack: 'start',
+                 //                                  align: 'center',
+                 //                              },
+                 //                              items: [
+                 //                                  {
+
+                 //                                      xtype: 'image',
+                 //                                      src: 'resources/icons/scanQRcodeGrey.png',
+                 //                                      width: 55,
+                 //                                      height: 55,
+                 //                                      margin: '0 0 0 0'
+                 //                                  },
+                 //{
+                 //    html: '<div style="color:white;text-align: center;font-size:12px;width:100%;font-weight:bold;margin:0px 0px 0px 0px" ><u>Scan Ayoha Reward Card</u></div>',
+                 //},
+
+                 //                              ]
+
+                 //                          },
+
+
+
+
+
+
+
+
+
+
+                            ]
+
+                 },
+
+
+
+
+                 /////////////////
+
+                 {
+                     xtype: 'container',
+                     height: '100%',
+                     width: '100%',
+                     layout: {
+                         type: 'vbox',
+                         pack: 'center',
+                         align: 'center'
+                     },
+                     style: ' background-color:transparent;',
+                     items: [
+
+                         {
+
+
+
+                             xtype: 'container',
+                             height: '33.3%',
+                             //  height: '60%',
+                             width: '100%',
+
+                            // flex: 1,
+
+                             // style: 'background-image: url("resources/icons/ConfetiFour.gif"); background-size: 100% 100%;background-repeat: no-repeat;',
+                             name: 'clickableContainerFloatPanel_QrCodeScanner_ScanCampaign',
+                             layout: {
+                                 type: 'vbox',
+                                 pack: 'start',
+                                 align: 'center'
+                             },
+                             style: 'background-color:rgba(0, 0, 0, 0.5);border-radius: 0px 0px 0px 0px;',
+                             //style: ' background-color:transparent;',
+                             items: [
+
+
+                                                                                                      {
+                                                                                                          margin: '0 0 0 -5',
+                                                                                                          id:'FloatPanel_QrCodeScanner_ScanCampaign_AyohaRewardLogo',
+                                                                                                          height: 160,
+                                                                                                          width: 160,
+                                                                                                          html: '<img src="resources/icons/Logo/LogoOrangeSimplifed.png" alt="Image" style="width:160px;height:160px;">',
+                                                                                                      },
+                             {
+
+                                 margin: '-10 0 0 0',
+                                 // height: 20,
+                                 html: '<div style="width:100%;background-color: transparent;text-align:left;border: 1px none white;font-family:Century Gothic;font-size: 25px;font-weight:bold;color:white;">Ayoha Rewards</div>'
+                             },
+                              {
+
+                                  margin: '-3 0 0 0',
+                                  // height: 20,
+                                  html: '<div style="width:100%;background-color: transparent;text-align:left;border: 1px none white;font-family:Century Gothic;font-size: 11px;font-weight:normal;color:white;">We Double Your Reward !</div>'
+                              },
+
+
+
+                             ]
+
+
+
+                         },
+
+
+
+
+
+
+
+
+                 {
+
+
+
+                     xtype: 'container',
+                     height: '33.3%',
+                     //  height: '60%',
+                     width: '100%',
+
+                     // style: 'background-image: url("resources/icons/ConfetiFour.gif"); background-size: 100% 100%;background-repeat: no-repeat;',
+                     id: 'clickableContainerFloatPanel_QrCodeScanner_ScanCampaignID',
+                     layout: {
+                         type: 'vbox',
+                         pack: 'center',
+                         align: 'center'
+                     },
+                     style: 'background-color:rgba(0, 0, 0, 0.0);border-radius: 0px 0px 0px 0px;border-right:50px solid rgba(0, 0, 0, 0.5);border-top:2px none rgba(0, 0, 0, 0.5);border-left:50px solid rgba(0, 0, 0, 0.5);border-bottom:2px none rgba(0, 0, 0, 0.5);',
+                     //style: ' background-color:transparent;',
+                     items: [
+
+
+
+
+//                         {
+//    xtype: 'container',
+//    width: '80%',
+//    height: 100,
+//    style: 'background-color:rgba(0, 0, 0, 0.1);border-radius: 5px 5px 5px 5px;border-right:2px solid #ECF0F1;border-top:2px solid #ECF0F1;border-left:2px solid #ECF0F1;border-bottom:2px solid #ECF0F1;',
+//    layout: {
+//        type: 'vbox',
+//        pack: 'center',
+//        align: 'center',
+//    },
+
+//},
+
+
+
+
+
+
+
+                     ]
+
+
+
+                 },
+                       {
+
+
+
+                           xtype: 'container',
+                           height: '33.3%',
+                           //  height: '60%',
+                           width: '100%',
+
+                        
+                           // style: 'background-image: url("resources/icons/ConfetiFour.gif"); background-size: 100% 100%;background-repeat: no-repeat;',
+                           id: 'ContainerFloatPanel_QrCodeScanner_ScanCampaignIDBottom',
+                           layout: {
+                               type: 'vbox',
+                               pack: 'start',
+                               align: 'center'
+                           },
+                           style: 'background-color:rgba(0, 0, 0, 0.5);border-radius: 0px 0px 0px 0px;',
+                           //style: ' background-color:transparent;',
+                           items: [
+
+
+
+
+
+                                {
+                                    html: '<div style="color:white;text-align: center;font-size:12px;width:100%;font-weight:bold;margin:0px 0px 0px 0px;background-color:transparent" >Place a QR Code inside the scan area</div>',
+                                    margin: '40 0 0 0',
+                                },
+
+
+
+
+
+
+                           ]
+
+
+
+                       },
+                     ]
+                 },
+
+                 
+
+                 //////////////////
+
+
+                       {
+
+                           xtype: 'container',
+                           width: '100%',
+
+                           // width: 40,
+                           docked: 'bottom',
+                           height: 40,
+                           // style: 'background-color:rgba(0, 0, 0, 0.1);border-radius: 0px 0px 0px 0px;',
+                           style: ' background-color: #fac;background-image: linear-gradient(#c800ffc9,#ff00de75);',
+                           layout: {
+                               type: 'vbox',
+                               pack: 'center',
+                               align: 'center',
+                           },
+                           items: [
+
+                                {
+                                    html: '<div style="color:white;text-align: center;font-size:11px;width:100%;font-weight:normal;margin:0px 0px 0px 0px;background-color:transparent" >Developed by AA Property Solution. Kuala Lumpur ,MALAYSIA</div>',
+                                    margin: '0 0 0 0',
+                                },
+
+                           ]
+
+                       },
+
+
+
+
+
+
+
+
+
+
+
+             ],
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+        });
+
+    return _FloatPanel_QrCodeScanner_ScanCampaign;
+}
+
+var QRCodeResult;
+
+function FloatPanel_QrCodeScanner_ScanCampaignShow() {
+    QRCodeResult = "";
+    Ext.Viewport.remove(_FloatPanel_QrCodeScanner_ScanCampaign);
+    this.overlay = Ext.Viewport.add(FloatPanel_QrCodeScanner_ScanCampaign());
+    this.overlay.show();
+    AddRoutePages("FloatPanel_QrCodeScanner_ScanCampaignHide()");
+    is_FloatPanel_QrCodeScanner_ScanCampaignOpen = 'Y';
+    FloatPanel_QrCodeScanner_CenterLineMessageShow();
+   
+
+    var x = screen.width;
+    var y = screen.height;
+    var xx = x - 28;
+
+
+    if (y < 700) {
+        Ext.getCmp('FloatPanel_QrCodeScanner_ScanCampaign_AyohaRewardLogo').setHeight(130);
+        Ext.getCmp('FloatPanel_QrCodeScanner_ScanCampaign_AyohaRewardLogo').setWidth(130);
+        Ext.getCmp('FloatPanel_QrCodeScanner_ScanCampaign_AyohaRewardLogo').setHtml('<img src="resources/icons/Logo/LogoOrangeSimplifed.png" alt="Image" style="width:130px;height:130px;">');
+    }
+
+
+ 
+}
+var is_FloatPanel_QrCodeScanner_ScanCampaignOpen = 'N';
+
+function FloatPanel_QrCodeScanner_ScanCampaignHide() {
+    // scanner.stop();
+    Ext.getCmp('mainView').setHidden(false);
+    FloatPanel_QrCodeScanner_CenterLineMessageHide();
+    if (is_FloatPanel_QrCodeScanner_ScanCampaignOpen == 'Y') {
+        _FloatPanel_QrCodeScanner_ScanCampaign.hide();
+        is_FloatPanel_QrCodeScanner_ScanCampaignOpen = 'N';
+        RemovePages("FloatPanel_QrCodeScanner_ScanCampaignHide()");
+        window.QRScanner.destroy(function (status) {
+           // alert(status);
+        });
+        // swalFireSuccessStampedCardMsg("Stamped Success!!");
+    }
+
+}
+
+
+
+
+
+
+

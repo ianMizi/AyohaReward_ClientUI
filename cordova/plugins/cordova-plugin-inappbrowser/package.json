@@ -1,0 +1,201 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-inappbrowser@4.1.0",
+        "scope": null,
+        "escapedName": "cordova-plugin-inappbrowser",
+        "name": "cordova-plugin-inappbrowser",
+        "rawSpec": "4.1.0",
+        "spec": "4.1.0",
+        "type": "version"
+      },
+      "C:\\inetpub\\wwwroot\\AyohaRewardvU\\cordova"
+    ]
+  ],
+  "_from": "cordova-plugin-inappbrowser@4.1.0",
+  "_hasShrinkwrap": false,
+  "_id": "cordova-plugin-inappbrowser@4.1.0",
+  "_inCache": true,
+  "_integrity": "",
+  "_location": "/cordova-plugin-inappbrowser",
+  "_nodeVersion": "10.16.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-inappbrowser_4.1.0_1605943586819_0.5992655640063982"
+  },
+  "_npmUser": {
+    "name": "niklasmerz",
+    "email": "NiklasMerz@gmx.net"
+  },
+  "_npmVersion": "6.14.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-inappbrowser@4.1.0",
+    "scope": null,
+    "escapedName": "cordova-plugin-inappbrowser",
+    "name": "cordova-plugin-inappbrowser",
+    "rawSpec": "4.1.0",
+    "spec": "4.1.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-inappbrowser/-/cordova-plugin-inappbrowser-4.1.0.tgz",
+  "_shasum": "6010809d1cd813c546f65e4e41dc2b9ed97179e4",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-inappbrowser@4.1.0",
+  "_where": "C:\\inetpub\\wwwroot\\AyohaRewardvU\\cordova",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-inappbrowser/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-inappbrowser",
+    "platforms": [
+      "android",
+      "browser",
+      "ios",
+      "osx",
+      "windows"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova InAppBrowser Plugin",
+  "devDependencies": {
+    "@cordova/eslint-config": "^3.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-jPvcwDx2/L5ZbVG69NT2xmlG1E+MljRxkdsFpgj/5aoaF4oPqxg44J/bYxJNWgQtGnRSRWoqCRmU7FgmmMNMxA==",
+    "shasum": "6010809d1cd813c546f65e4e41dc2b9ed97179e4",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-inappbrowser/-/cordova-plugin-inappbrowser-4.1.0.tgz",
+    "fileCount": 37,
+    "unpackedSize": 322510,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfuMEjCRA9TVsSAnZWagAAFGoP/RiCDvahmcDY3FLltO2T\nrgaaSXCvKSfHi2gEvqrwbyoAHBKj2SjMR7yCYegNmEnAs2lRvYYoHlbSHg9q\nBdd1JKryxLoM+wsp07bmPpIwW8axBaChm/fNGPrbYXQ6Xmxtym0IzCzYUbag\nK6Ueg6sGuZoGQkq8fCchgc2l/ummH6uyvnX5TEEeizhL16VwbpnfAknXRs2E\nGPwCqLbdJK/dlN/XUiOqJy+8BN61ZkkyeSm0WHKlUCAtW2s/G6EStMeVWlCY\nx4jm8kVA27LgavQ7exNii4o2AnwWyB1THlwv2PWhAlWyCZ3nKLQDJKYyL0uc\nFUc1bJhHxbw2bGfvhtmYqpSc/H5gePvDoDDAsrOUMeibwvsfvC9zofFGgXFk\neM59wMm3ZddoJw0NdAKPlBMV/fzXV248FoKc2dP/hQMwJ8tckfxP2b8ns+Vf\nwPjbTiQGcrBSAzQJemYCHczNM48hhVi9LBVuEcFnYDFnZVc/ObVgwLEdOBFu\nP0164TIovLo2hjRmA/w5pN0KmcEuoqzvftEz8FxqW4aRusilv723aHRGQauv\nE/Q9g054fcfIhCsEh4D/C+JRvvJhMnTV4GajUFShi2amt+l2LfUTq6He3Eh7\n6tkDiN8PPzAe7lIshpNGT4Xcdt09S2fq45WhSnxwJxwmdGC4Tcc+XuvEcHO7\n+lYD\r\n=b3Pk\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "0.2.3": {
+        "cordova": ">=3.1.0"
+      },
+      "4.0.0": {
+        "cordova": ">=3.1.0",
+        "cordova-ios": ">=4.0.0"
+      },
+      "5.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-inappbrowser#readme",
+  "keywords": [
+    "cordova",
+    "in",
+    "app",
+    "browser",
+    "inappbrowser",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-browser",
+    "cordova-ios",
+    "cordova-osx",
+    "cordova-windows"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "janpio",
+      "email": "piotrowski+npm@gmail.com"
+    },
+    {
+      "name": "niklasmerz",
+      "email": "NiklasMerz@gmx.net"
+    },
+    {
+      "name": "erisu",
+      "email": "erisu.dev@outlook.jp"
+    },
+    {
+      "name": "brodybits",
+      "email": "chris@brody.consulting"
+    },
+    {
+      "name": "dpogue",
+      "email": "darryl@dpogue.ca"
+    },
+    {
+      "name": "cordovaowner",
+      "email": "apachecordovabot@gmail.com"
+    },
+    {
+      "name": "stevegill",
+      "email": "stevengill97@gmail.com"
+    },
+    {
+      "name": "purplecabbage",
+      "email": "purplecabbage@gmail.com"
+    },
+    {
+      "name": "anis",
+      "email": "anis.kadri@gmail.com"
+    },
+    {
+      "name": "filmaj",
+      "email": "maj.fil@gmail.com"
+    },
+    {
+      "name": "bowserj",
+      "email": "bowserj@apache.org"
+    },
+    {
+      "name": "shazron",
+      "email": "shazron@gmail.com"
+    },
+    {
+      "name": "surajpindoria",
+      "email": "pindoria.suraj@gmail.com"
+    },
+    {
+      "name": "sgrebnov",
+      "email": "sergei.grebnov@gmail.com"
+    },
+    {
+      "name": "kotikov.vladimir",
+      "email": "kotikov.vladimir@gmail.com"
+    },
+    {
+      "name": "csantanapr",
+      "email": "csantana23@gmail.com"
+    },
+    {
+      "name": "macdonst",
+      "email": "simon.macdonald@gmail.com"
+    },
+    {
+      "name": "davealden",
+      "email": "dave@workingedge.co.uk"
+    },
+    {
+      "name": "jcesarmobile",
+      "email": "jcesarmobile@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-inappbrowser",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-inappbrowser.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "types": "./types/index.d.ts",
+  "version": "4.1.0"
+}

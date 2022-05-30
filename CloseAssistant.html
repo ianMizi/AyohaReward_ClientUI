@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h1 style="color: green;">
+		GeeksforGeeks
+	</h1>
+
+	<p>
+		Click on the button below to
+		close the current window.
+	</p>
+
+	<!-- Define the button to
+	close the window -->
+	<button onclick="return closeWindow();">
+		Close Window
+	</button>
+	
+	<script type="text/javascript">
+		function closeWindow() {
+
+		
+			let new_window =
+				open(location, '_self');
+
+			// Close this window
+			new_window.close();
+
+			return false;
+		}
+	</script>
+</body>
+</html>
